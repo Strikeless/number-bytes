@@ -1,12 +1,10 @@
 use core::array::TryFromSliceError;
 
+#[cfg(feature = "endianness")]
 pub mod endianness;
 
 #[cfg(test)]
 pub mod tests;
-
-#[cfg(feature = "endianness")]
-pub mod endianness;
 
 pub type FromBytesError = TryFromSliceError;
 pub type FromBytesResult<T> = Result<T, FromBytesError>;
