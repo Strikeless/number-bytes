@@ -1,0 +1,11 @@
+[package]
+name = "number-bytes"
+version = "1.0.0"
+edition = "2021"
+description = "Provides a simple trait for converting generic numeric types to and from bytes"
+license = "MIT OR Apache-2.0"
+
+[features]
+endianness = []
+
+[dependencies]
